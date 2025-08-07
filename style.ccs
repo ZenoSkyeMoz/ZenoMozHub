@@ -66,6 +66,38 @@ h1 {
   background: #444;
   transform: scale(1.05);
 }
+}
+
+.description {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.hub-logo {
+  width: 130px;
+  margin-bottom: 20px;
+}
+
+.buttons .btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 25px;
+  border: none;
+  color: white;
+  background: rgba(40, 40, 40, 0.8);
+  border-radius: 12px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: 0.3s ease;
+  box-shadow: 0 0 10px rgba(255,255,255,0.05);
+}
+
+.buttons .btn:hover {
+  background: #444;
+  transform: scale(1.05);
+}
   border-radius: 50%;
   border: 2px solid white;
   object-fit: cover;
