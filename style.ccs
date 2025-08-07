@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body, html {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: black;
+  color: white;
+}
+
+canvas#stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.content {
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hub-logo {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-bottom: 25px;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 2.6rem;
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.buttons .btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 25px;
+  border: none;
+  color: white;
+  background: rgba(40, 40, 40, 0.8);
+  border-radius: 12px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: 0.3s ease;
+  box-shadow: 0 0 10px rgba(255,255,255,0.05);
+}
+
+.buttons .btn:hover {
+  background: #444;
+  transform: scale(1.05);
+}
+
+/* Fix for mobile "white on tap" bug */
+.buttons .btn:active,
+.buttons .btn:focus {
+  background: rgba(40, 40, 40, 0.8) !important;
+  color: white !important;
+  outline: none;
+}
